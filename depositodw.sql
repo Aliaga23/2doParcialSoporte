@@ -1,0 +1,136 @@
+USE master;
+GO
+IF EXISTS (SELECT name FROM sys.databases WHERE name = 'DepositosDW')
+BEGIN
+    ALTER DATABASE ReclamosDW3 SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE ReclamosDW3;
+END
+GO
+
+CREATE DATABASE DepositosDW
+ON 
+(
+    NAME = 'DepositosDW_Data',
+    FILENAME = 'C:\Data\DepositosDW_Data.mdf',
+    SIZE = 1024MB,
+    MAXSIZE = 10GB,
+    FILEGROWTH = 256MB
+)
+LOG ON 
+(
+    NAME = 'DepositosDW_Log',
+    FILENAME = 'C:\Data\DepositosDW_Log.ldf',
+    SIZE = 256MB,
+    MAXSIZE = 2GB,
+    FILEGROWTH = 64MB
+);
+GO
+
+ALTER DATABASE DepositosDW SET RECOVERY SIMPLE;
+ALTER DATABASE DepositosDW SET AUTO_CLOSE OFF;
+ALTER DATABASE DepositosDW SET AUTO_SHRINK OFF;
+ALTER DATABASE DepositosDW SET PAGE_VERIFY CHECKSUM;
+GO
+
+USE DepositosDW;
+GO
+
+CREATE SCHEMA dw AUTHORIZATION dbo;
+GO
+
+CREATE TABLE dw.DIM_TIEMPO (
+    TiempoKey INT IDENTITY(1,1) PRIMARY KEY,
+    Fecha DATE NOT NULL UNIQUE,
+    Año INT NOT NULL,
+    Mes INT NOT NULL,
+    Trimestre INT NOT NULL,
+    Semestre INT NOT NULL,
+    NombreMes NVARCHAR(20) NOT NULL
+);
+GO
+
+CREATE TABLE dw.DIM_CLIENTE (
+    ClienteKey INT IDENTITY(1,1) PRIMARY KEY,
+    ClienteId BIGINT NOT NULL UNIQUE,
+    TipoCliente NVARCHAR(16) NOT NULL,
+    PersonaId BIGINT NULL,
+    OrganizacionId BIGINT NULL,
+    NombreCompleto NVARCHAR(300) NOT NULL,
+    Genero NVARCHAR(15) NULL,
+    NacionalidadPais NVARCHAR(100) NULL
+);
+GO
+
+CREATE TABLE dw.DIM_SUCURSAL (
+    SucursalKey INT IDENTITY(1,1) PRIMARY KEY,
+    SucursalId BIGINT NOT NULL UNIQUE,
+    NombreSucursal NVARCHAR(128) NOT NULL,
+    CiudadId BIGINT NULL,
+    CiudadNombre NVARCHAR(128) NULL,
+    RegionNombre NVARCHAR(128) NULL,
+    PaisNombre NVARCHAR(128) NULL
+);
+GO
+
+CREATE TABLE dw.DIM_MONEDA (
+    MonedaKey INT IDENTITY(1,1) PRIMARY KEY,
+    MonedaId BIGINT NOT NULL UNIQUE,
+    CodigoMoneda CHAR(3) NOT NULL,
+    NombreMoneda NVARCHAR(64) NOT NULL
+);
+GO
+
+CREATE TABLE dw.DIM_CANAL (
+    CanalKey INT IDENTITY(1,1) PRIMARY KEY,
+    CanalId BIGINT NOT NULL UNIQUE,
+    CodigoCanal NVARCHAR(32) NOT NULL,
+    NombreCanal NVARCHAR(128) NOT NULL
+);
+GO
+
+CREATE TABLE dw.DIM_PRODUCTO (
+    ProductoKey INT IDENTITY(1,1) PRIMARY KEY,
+    ProductoId BIGINT NOT NULL UNIQUE,
+    CodigoProducto NVARCHAR(32) NOT NULL,
+    NombreProducto NVARCHAR(128) NOT NULL,
+    CategoriaProducto NVARCHAR(32) NOT NULL,
+    TipoProducto NVARCHAR(32) NULL
+);
+GO
+
+CREATE TABLE dw.FACT_DEPOSITOS (
+    DepositoKey INT IDENTITY(1,1) PRIMARY KEY,
+    TransaccionDepositoId BIGINT NOT NULL UNIQUE,
+    DepositCuentaId BIGINT NOT NULL,
+    CuentaId BIGINT NOT NULL,
+    FechaDeposito DATE NOT NULL,
+
+    TiempoKey INT NOT NULL,
+    ClienteKey INT NOT NULL,
+    SucursalKey INT NOT NULL,
+    MonedaKey INT NOT NULL,
+    CanalKey INT NOT NULL,
+    ProductoKey INT NULL,
+
+    MontoDeposito DECIMAL(19,4) NOT NULL,
+
+    DiasDesdeUltimoDeposito INT NULL,
+    
+    MontoPromedioCliente DECIMAL(19,4) NULL,
+
+    CONSTRAINT FK_FACT_DEPOSITOS_Tiempo 
+        FOREIGN KEY (TiempoKey) REFERENCES dw.DIM_TIEMPO(TiempoKey),
+    CONSTRAINT FK_FACT_DEPOSITOS_Cliente 
+        FOREIGN KEY (ClienteKey) REFERENCES dw.DIM_CLIENTE(ClienteKey),
+    CONSTRAINT FK_FACT_DEPOSITOS_Sucursal 
+        FOREIGN KEY (SucursalKey) REFERENCES dw.DIM_SUCURSAL(SucursalKey),
+    CONSTRAINT FK_FACT_DEPOSITOS_Moneda 
+        FOREIGN KEY (MonedaKey) REFERENCES dw.DIM_MONEDA(MonedaKey),
+    CONSTRAINT FK_FACT_DEPOSITOS_Canal 
+        FOREIGN KEY (CanalKey) REFERENCES dw.DIM_CANAL(CanalKey),
+    CONSTRAINT FK_FACT_DEPOSITOS_Producto 
+        FOREIGN KEY (ProductoKey) REFERENCES dw.DIM_PRODUCTO(ProductoKey)
+);
+GO
+
+

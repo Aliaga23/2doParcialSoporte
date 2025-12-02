@@ -1,0 +1,116 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\Reclamos DW3.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|solutionrelative:CUBO_RECLAMOS_12\\Reclamos DW3.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM CATEGORIA.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|solutionrelative:CUBO_RECLAMOS_12\\DIM CATEGORIA.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM SUCURSAL.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|solutionrelative:CUBO_RECLAMOS_12\\DIM SUCURSAL.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM CLIENTE.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|solutionrelative:CUBO_RECLAMOS_12\\DIM CLIENTE.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM TIEMPO.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|solutionrelative:CUBO_RECLAMOS_12\\DIM TIEMPO.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\Reclamos DW3.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C79E55D1-822C-4054-A004-673352A536CE}|CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12.dwproj|solutionrelative:CUBO_RECLAMOS_12\\Reclamos DW3.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Reclamos DW3.cube [Design]",
+              "DocumentMoniker": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\Reclamos DW3.cube",
+              "RelativeDocumentMoniker": "CUBO_RECLAMOS_12\\Reclamos DW3.cube",
+              "ToolTip": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\Reclamos DW3.cube [Design]",
+              "RelativeToolTip": "CUBO_RECLAMOS_12\\Reclamos DW3.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T21:54:11.275Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DIM CATEGORIA.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM CATEGORIA.dim",
+              "RelativeDocumentMoniker": "CUBO_RECLAMOS_12\\DIM CATEGORIA.dim",
+              "ToolTip": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM CATEGORIA.dim [Design]",
+              "RelativeToolTip": "CUBO_RECLAMOS_12\\DIM CATEGORIA.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T21:24:06.797Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DIM SUCURSAL.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM SUCURSAL.dim",
+              "RelativeDocumentMoniker": "CUBO_RECLAMOS_12\\DIM SUCURSAL.dim",
+              "ToolTip": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM SUCURSAL.dim [Design]",
+              "RelativeToolTip": "CUBO_RECLAMOS_12\\DIM SUCURSAL.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T21:23:59.021Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DIM CLIENTE.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM CLIENTE.dim",
+              "RelativeDocumentMoniker": "CUBO_RECLAMOS_12\\DIM CLIENTE.dim",
+              "ToolTip": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM CLIENTE.dim [Design]",
+              "RelativeToolTip": "CUBO_RECLAMOS_12\\DIM CLIENTE.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T21:23:52.838Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DIM TIEMPO.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM TIEMPO.dim",
+              "RelativeDocumentMoniker": "CUBO_RECLAMOS_12\\DIM TIEMPO.dim",
+              "ToolTip": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\DIM TIEMPO.dim [Design]",
+              "RelativeToolTip": "CUBO_RECLAMOS_12\\DIM TIEMPO.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T21:23:45.391Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Reclamos DW3.dsv [Design]",
+              "DocumentMoniker": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\Reclamos DW3.dsv",
+              "RelativeDocumentMoniker": "CUBO_RECLAMOS_12\\Reclamos DW3.dsv",
+              "ToolTip": "C:\\Users\\jaav2\\source\\repos\\CUBO_RECLAMOS_12\\CUBO_RECLAMOS_12\\Reclamos DW3.dsv [Design]",
+              "RelativeToolTip": "CUBO_RECLAMOS_12\\Reclamos DW3.dsv [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T21:23:22.116Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
